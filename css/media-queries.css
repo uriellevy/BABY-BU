@@ -13,10 +13,10 @@
     font-size: 1.7rem;
   }
   /* video */
-  /* #video video {
+  #video video {
     max-width: 60rem;
     border-radius: 10px;
-  } */
+  }
 
   /* contact */
   /* .contact {
@@ -80,8 +80,8 @@
 
 @media (max-width: 768px) {
   /* video */
-  /* #video video {
+  #video video {
     max-width: 50rem;
     border-radius: 10px;
-  } */
+  }
 }
