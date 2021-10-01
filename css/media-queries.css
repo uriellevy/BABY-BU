@@ -1,0 +1,87 @@
+@media (max-width: 1048px) {
+  /* header */
+  label.logo {
+    font-size: 3.2rem;
+    padding-left: 6rem;
+  }
+
+  nav ul {
+    margin-right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.7rem;
+  }
+  /* video */
+  /* #video video {
+    max-width: 60rem;
+    border-radius: 10px;
+  } */
+
+  /* contact */
+  /* .contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  /* .map {
+    height: 30vh;
+    width: 50rem;
+    border-radius: 10px;
+    background-color: #fff;
+  } */
+}
+
+@media (max-width: 909px) {
+  nav #icon {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2f36407e;
+    top: 8rem;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav li {
+    display: block;
+    margin: 5rem 0;
+    line-height: 3rem;
+  }
+
+  nav a {
+    font-size: 2rem;
+  }
+
+  a.active,
+  a:hover {
+    border: none;
+    color: var(--secondary-color);
+  }
+
+  nav ul.show {
+    left: 0;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section .cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  /* video */
+  /* #video video {
+    max-width: 50rem;
+    border-radius: 10px;
+  } */
+}
