@@ -83,12 +83,19 @@
   }
 
   .map {
-    height: 30rem;
+    height: 20rem;
     width: 50rem;
   }
 }
 
 @media (max-width: 768px) {
+  /* intro */
+
+  .intro-content .text h2,
+  .intro-content .text p {
+    text-align: center;
+    color: #777;
+  }
   /* video */
   #video video {
     max-width: 50rem;
@@ -112,7 +119,18 @@
   }
 
   .map {
-    height: 25rem;
+    height: 20rem;
     width: 35rem;
+  }
+}
+
+@media (max-width: 400px) {
+  /* intro */
+  .intro-container {
+    height: 130vh;
+  }
+  /* video */
+  #video video {
+    max-width: 35rem;
   }
 }

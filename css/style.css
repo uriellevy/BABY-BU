@@ -7,6 +7,8 @@
 
 :root {
   --primary-color: rgb(9, 30, 88);
+  --secondary-color: #f4f4f4;
+  --third-color: #777;
 }
 
 /* ************** */
@@ -20,7 +22,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 3.4rem;
   padding: 1rem;
   text-align: center;
 }
@@ -41,13 +43,13 @@ p {
 
 .btn:link,
 .btn:visited {
-  color: #000;
+  color: rgba(253, 246, 235, 0.8);
   background-color: var(--primary-color-trans);
   border: 2px solid #333;
   display: inline-block;
   padding: 1rem 3rem;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-decoration: none;
   border-radius: 200px;
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -63,7 +65,7 @@ p {
 }
 
 .text-wrapper {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 15px;
 }
 
@@ -72,21 +74,18 @@ p {
 /* ************** */
 
 .header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/Img/background/background-1.jpg) no-repeat center center/cover fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+    url(/Img/background/background-3.jpg) no-repeat center center/cover fixed;
   height: 100vh;
   z-index: -1;
 }
 
 .header-content {
   color: #254a61;
-
   position: absolute;
   top: 50%;
   left: 10%;
   max-width: 40rem;
-
-  /* text-align: center; */
 }
 
 nav {
@@ -107,7 +106,7 @@ nav {
 .logo a {
   font-size: 3.5rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -166,9 +165,11 @@ nav #icon {
 .intro-container {
   height: 100vh;
   max-width: 100%;
+  overflow: hidden;
+  /* padding-top: 0.2rem; */
 }
 .intro-content {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-color);
   height: 100%;
   width: 100%;
 
@@ -185,10 +186,10 @@ nav #icon {
   flex-direction: column;
 }
 
-.intro-content .text h1,
+.intro-content .text h2,
 .intro-content .text p {
   text-align: left;
-  color: #777;
+  color: var(--third-color);
 }
 
 /* ************** */
@@ -226,7 +227,7 @@ nav #icon {
   max-width: 760px;
   /* padding: 8rem 0 0; */
   margin: auto;
-  border: #fff solid 3px;
+  border: var(--third-color) solid 3px;
   background: white;
 }
 
@@ -279,7 +280,7 @@ nav #icon {
 /* ************** */
 
 #recommendation {
-  background-color: #284c5c96;
+  background-color: var(--secondary-color);
   position: relative;
   padding: 6rem 0 4rem;
   /* margin: 6rem 0 0 0; */
@@ -310,7 +311,7 @@ nav #icon {
   text-align: center;
   /* text-transform: uppercase; */
   margin: 3rem 0;
-  color: #fff;
+  color: var(--third-color);
   padding-bottom: 3rem;
 }
 
@@ -335,7 +336,7 @@ blockquote {
   font-style: italic;
   position: relative;
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--third-color);
 }
 
 blockquote div {
@@ -352,7 +353,7 @@ cite {
   font-size: 1.4rem;
   padding: 3% 0 12% 3%;
   display: block;
-  color: #fff;
+  color: var(--third-color);
 }
 
 blockquote::before {
@@ -369,8 +370,8 @@ blockquote::before {
 /* ************** */
 
 #contact {
-  background: url("/Img/background/background-4.jpg") no-repeat center
-    center/cover fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Img/background/background-2.jpg) no-repeat center center/cover fixed;
   height: 100vh;
   padding-top: 10rem;
 }
@@ -383,13 +384,20 @@ blockquote::before {
 }
 
 .contact-info {
-  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* background-color: black; */
+  color: var(--secondary-color);
   line-height: 6.5rem;
   font-size: 5rem;
 }
 
 .contact-info h1 {
   font-size: 6rem;
+  position: absolute;
+  top: -9rem;
   /* text-align: left; */
 }
 
@@ -414,7 +422,7 @@ blockquote::before {
 
 .contact-info .fab {
   font-size: 4rem;
-  color: #fff;
+  color: var(--secondary-color);
   transition: 0.3s ease;
 }
 
@@ -430,6 +438,25 @@ blockquote::before {
   height: 50rem;
   width: 50rem;
   border-radius: 10px;
+}
+
+/* ************** */
+/* FOOTER */
+/* ************** */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.4rem;
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0.5rem;
 }
 
 html {
