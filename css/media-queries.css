@@ -12,6 +12,10 @@
   nav a {
     font-size: 1.7rem;
   }
+
+  .header-content {
+    top: 72%;
+  }
   /* video */
   #video video {
     max-width: 60rem;
@@ -19,18 +23,27 @@
   }
 
   /* contact */
-  /* .contact {
+@media (max-width: 950px) {
+  .container {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
+  }
 
-  /* .map {
-    height: 30vh;
-    width: 50rem;
-    border-radius: 10px;
-    background-color: #fff;
-  } */
+  .contact-info,
+  .contact-form {
+    margin: 3rem 5rem;
+  }
+
+  .contact-form h2 {
+    font-size: 3rem;
+  }
+
+  .contact-form .text-box {
+    width: 100%;
+  }
+
+  .contact-form .form .text-box:first-child {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 909px) {
@@ -76,16 +89,6 @@
   section .cards {
     flex-direction: column;
   }
-
-  /* contact */
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .map {
-    height: 20rem;
-    width: 50rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -104,24 +107,6 @@
 }
 
 @media (max-width: 500px) {
-  /* contact */
-
-  .contact-info {
-    color: #fff;
-    line-height: 4rem;
-    font-size: 3rem;
-  }
-
-  .contact-info h1 {
-    font-size: 4.5rem;
-    text-align: left;
-    margin-bottom: 3rem;
-  }
-
-  .map {
-    height: 20rem;
-    width: 35rem;
-  }
 }
 
 @media (max-width: 400px) {

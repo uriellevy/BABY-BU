@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+}
+body {
+  font-family: "Darker Grotesque", sans-serif;
 }
 
 :root {
@@ -17,24 +22,27 @@
 
 h1 {
   font-size: 4rem;
-  padding: 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 
 h2 {
-  font-size: 3.4rem;
+  font-size: 3.8rem;
   padding: 1rem;
   text-align: center;
 }
 
 h3 {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0 1rem 1rem;
   text-align: center;
 }
 
 p {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* ************** */
@@ -64,28 +72,31 @@ p {
   /* filter: drop-shadow(2px 5px 5px 5px #222); */
 }
 
-.text-wrapper {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 15px;
-}
-
 /* ************** */
 /* HEADER */
 /* ************** */
 
 .header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-    url(/Img/background/background-3.jpg) no-repeat center center/cover fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/Img/background/DSC04791.JPG) no-repeat center center/cover fixed;
   height: 100vh;
   z-index: -1;
+  display: flex;
+}
+
+.text-wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
 }
 
 .header-content {
-  color: #254a61;
+  color: #fff;
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 3%;
   max-width: 40rem;
+  justify-content: center;
+  transition: all 0.5s ease;
 }
 
 nav {
@@ -99,15 +110,12 @@ nav {
 }
 
 .logo {
-  padding: 0 5rem 0 3rem !important;
+  background: url("/Img/Asset\ 1\ \(1\).png") no-repeat center center/cover;
+  padding: 0 5rem 0 10rem !important;
   line-height: 8rem;
-}
-
-.logo a {
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: var(--secondary-color);
-  text-decoration: none;
+  font-size: 3.2rem;
+  margin-left: 2rem;
+  cursor: pointer;
 }
 
 nav ul {
@@ -163,7 +171,7 @@ nav #icon {
 }
 
 .intro-container {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 100%;
   overflow: hidden;
   /* padding-top: 0.2rem; */
@@ -172,6 +180,7 @@ nav #icon {
   background-color: var(--secondary-color);
   height: 100%;
   width: 100%;
+  padding: 5.5rem 1rem;
 
   display: flex;
   flex-direction: column;
@@ -200,11 +209,9 @@ nav #icon {
   background: url("/Img/background/background-4.jpg") no-repeat center
     center/cover fixed;
   height: 100vh;
-  /* background: #999; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 2rem 0; */
 }
 
 #video video {
@@ -282,7 +289,7 @@ nav #icon {
 #recommendation {
   background-color: var(--secondary-color);
   position: relative;
-  padding: 6rem 0 4rem;
+  /* padding: 6rem 0 4rem; */
   /* margin: 6rem 0 0 0; */
   min-height: 80vh;
   display: flex;
@@ -293,6 +300,7 @@ nav #icon {
 .container-recommendation {
   width: 100%;
   height: 100%;
+  padding: 3rem 1rem;
 }
 
 .section-recommendation:nth-child(1),
@@ -307,7 +315,7 @@ nav #icon {
 }
 
 .section-recommendation h2 {
-  font-size: 3rem;
+  font-size: 3.8rem;
   text-align: center;
   /* text-transform: uppercase; */
   margin: 3rem 0;
@@ -335,7 +343,8 @@ blockquote {
   padding: 2%;
   font-style: italic;
   position: relative;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
   color: var(--third-color);
 }
 
@@ -350,7 +359,8 @@ blockquote div {
 cite {
   text-align: left;
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
+  font-weight: 600;
   padding: 3% 0 12% 3%;
   display: block;
   color: var(--third-color);
@@ -366,48 +376,46 @@ blockquote::before {
 }
 
 /* ************** */
-/* CONTACT*/
+/* CONTACT */
 /* ************** */
-
 #contact {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/Img/background/background-2.jpg) no-repeat center center/cover fixed;
-  height: 100vh;
-  padding-top: 10rem;
+  background: url("/Img/background/background-3.jpg") no-repeat center
+    center/cover fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-container {
-  height: 100%;
+.container {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .contact-info {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  /* background-color: black; */
-  color: var(--secondary-color);
+  color: #fff;
+  max-width: 50rem;
   line-height: 6.5rem;
+  padding-left: 5rem;
   font-size: 5rem;
-}
-
-.contact-info h1 {
-  font-size: 6rem;
-  position: absolute;
-  top: -9rem;
-  /* text-align: left; */
-}
-
-.contact-info a {
-  border: none;
+  /* background-color: #333; */
 }
 
 .contact-info i {
   margin-right: 3rem;
   font-size: 3rem;
+}
+
+.contact-form {
+  max-width: 70rem;
+  margin-right: 5rem;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
 }
 
 .sci {
@@ -419,10 +427,9 @@ blockquote::before {
   display: flex;
   align-items: center;
 }
-
 .contact-info .fab {
   font-size: 4rem;
-  color: var(--secondary-color);
+  color: #fff;
   transition: 0.3s ease;
 }
 
@@ -430,14 +437,69 @@ blockquote::before {
   color: #333;
 }
 
-.map-container {
-  /* background: #333; */
+.contact-form h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 6rem;
+  /* text-transform: uppercase; */
+  margin-bottom: 3rem;
 }
 
-.map {
-  height: 50rem;
-  width: 50rem;
-  border-radius: 10px;
+.contact-form .text-box {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50% - 1rem);
+  height: 5rem;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+.contact-form .text-box:first-child {
+  margin-right: 1.5rem;
+}
+
+.contact-form textarea {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  min-height: 20rem;
+  max-height: 40rem;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0 2rem 0;
+  opacity: 0.9;
+}
+
+.contact-form .text-box:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form .send-btn {
+  float: right;
+  background: #2e94e3;
+  color: #fff;
+  border: none;
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contact-form .send-btn:hover {
+  background: #0582e3;
 }
 
 /* ************** */
