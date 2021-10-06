@@ -40,7 +40,7 @@ h3 {
 
 p {
   font-size: 2rem;
-  font-weight: 600;
+  /* font-weight: 600; */
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
@@ -111,7 +111,7 @@ nav {
 
 .logo {
   background: url("/Img/Asset\ 1\ \(1\).png") no-repeat center center/cover;
-  padding: 0 5rem 0 10rem !important;
+  padding: 0 9rem 0 10rem !important;
   line-height: 8rem;
   font-size: 3.2rem;
   margin-left: 2rem;
@@ -198,7 +198,7 @@ nav #icon {
 .intro-content .text h2,
 .intro-content .text p {
   text-align: left;
-  color: var(--third-color);
+  color: #000;
 }
 
 /* ************** */
@@ -246,8 +246,9 @@ nav #icon {
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--primary-color);
+  color: #000;
   font-style: italic;
+  font-weight: bold;
 }
 
 .main-img img,
@@ -426,6 +427,10 @@ blockquote::before {
   list-style: none;
   display: flex;
   align-items: center;
+}
+
+.sci ul li a {
+  border: none;
 }
 .contact-info .fab {
   font-size: 4rem;
