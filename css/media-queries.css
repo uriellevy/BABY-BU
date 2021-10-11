@@ -15,6 +15,7 @@
 
   .header-content {
     top: 72%;
+    /* width: 100%; */
   }
   /* video */
   #video video {
@@ -101,7 +102,7 @@
   }
   /* video */
   #video video {
-    max-width: 50rem;
+    max-width: 45rem;
     border-radius: 10px;
   }
 }

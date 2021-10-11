@@ -67,7 +67,7 @@ p {
 .btn:hover,
 .btn:active {
   background-color: rgba(253, 246, 235, 0.1);
-  border: 1px solid rgba(253, 246, 235, 0.8);
+  border: 2px solid rgba(253, 246, 235, 0.8);
   color: #fff;
   /* filter: drop-shadow(2px 5px 5px 5px #222); */
 }
@@ -77,7 +77,11 @@ p {
 /* ************** */
 
 .header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(
+      to right,
+      rgba(183, 131, 231, 0.2),
+      rgba(128, 104, 184, 0.2)
+    ),
     url(/Img/background/DSC04791.JPG) no-repeat center center/cover fixed;
   height: 100vh;
   z-index: -1;
@@ -86,7 +90,9 @@ p {
 
 .text-wrapper {
   background-color: rgba(0, 0, 0, 0.7);
+  color: #f7f7f7;
   border-radius: 15px;
+  /* filter: drop-shadow(1px 5px 5px #f7f7f7); */
 }
 
 .header-content {
