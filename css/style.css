@@ -98,11 +98,11 @@ p {
 .header-content {
   color: #fff;
   position: absolute;
-  top: 50%;
-  left: 3%;
+  bottom: 5%;
+  left: 5%;
   max-width: 40rem;
   justify-content: center;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 }
 
 nav {
@@ -408,6 +408,11 @@ blockquote::before {
   padding-left: 5rem;
   font-size: 5rem;
   /* background-color: #333; */
+}
+
+.contact-info span {
+  font-size: 5rem;
+  visibility: hidden;
 }
 
 .contact-info i {
