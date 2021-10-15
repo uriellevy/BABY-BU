@@ -109,6 +109,30 @@
 .contact-info{
   font-size: 4rem !important;
 }
+
+/* background-images */
+.header {
+  background: linear-gradient(
+      to right,
+      rgba(183, 131, 231, 0.2),
+      rgba(128, 104, 184, 0.2)
+    ),
+    url(/Img/background/DSC04791.JPG) no-repeat center center/cover ;
+ 
+}
+
+#video {
+  background: url("/Img/background/background-4.jpg") no-repeat center
+    center/cover ;
+ 
+}
+
+#contact {
+  background: url("/Img/background/background-3.jpg") no-repeat center
+    center/cover ;
+ 
+}
+
 }
 
 @media (max-width: 400px) {
