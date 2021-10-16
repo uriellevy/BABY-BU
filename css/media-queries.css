@@ -107,7 +107,9 @@
 @media (max-width: 500px) {
   /* contact */
 .contact-info{
-  font-size: 4rem !important;
+  /* font-size: 4rem !important; */
+  padding-left: 2rem;
+  
 }
 }
 
