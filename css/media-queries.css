@@ -105,6 +105,11 @@
 }
 
 @media (max-width: 500px) {
+  /* home */
+  .text-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    
+  }
   /* contact */
 .contact-info{
   /* font-size: 4rem !important; */
