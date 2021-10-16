@@ -86,6 +86,7 @@ p {
   height: 100vh;
   z-index: -1;
   display: flex;
+  transition: 0.3s ease;
 }
 
 .text-wrapper {
