@@ -77,7 +77,8 @@ p {
 /* ************** */
 
 .header {
-  background-image: -webkit-gradient(
+  background-image: url(/Img/background/DSC04791.JPG)  ;
+  /* background-image: -webkit-gradient(
       to right,
       rgba(183, 131, 231, 0.2),
       rgba(128, 104, 184, 0.2)
@@ -88,7 +89,7 @@ p {
       rgba(183, 131, 231, 0.2),
       rgba(128, 104, 184, 0.2)
     ),
-    url(/Img/background/DSC04791.JPG) no-repeat center center/cover fixed;
+    url(/Img/background/DSC04791.JPG) no-repeat center center/cover fixed; */
     /* height: 100vh; 100% of the viewport */
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
