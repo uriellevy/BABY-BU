@@ -89,7 +89,11 @@ p {
       rgba(128, 104, 184, 0.2)
     ),
     url(/Img/background/DSC04791.JPG) no-repeat center center/cover fixed;
-  height: 100vh;
+    /* height: 100vh; 100% of the viewport */
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  
+  
   z-index: -1;
   display: flex;
   transition: 0.3s ease;
