@@ -76,19 +76,19 @@ p {
 /* HEADER */
 /* ************** */
 
-.header {
+/* .header {
   background-image: url(/Img/background/DSC04791.JPG)  ;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: 100vh; 
   height: calc(var(--vh, 1vh) * 100);
   
   
   z-index: -1;
   display: flex;
   transition: 0.3s ease;
-}
+} */
 
 .header::after{
   content:"";
