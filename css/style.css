@@ -94,7 +94,7 @@ p {
   left:0;
   right:0;
   z-index:-1; /* needed to keep in the background */
-  background: url('../Img/background/DSC04791.JPG') center center;
+  background: url('../Img/background/DSC04791.JPG')fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -239,23 +239,10 @@ nav #icon {
   display: flex;
   align-items: center;
   justify-content: center;
-
-}
-#contact::before{
-  content:"";
   
-  bottom: 0;
-  height:100vh; /* fix for mobile browser address bar appearing disappearing */
-  left:0;
-  right:0;
-  z-index:-1; /* needed to keep in the background */
-  background: url('../Img/background/background-3.jpg') center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 
 }
+
 
 
 
@@ -432,6 +419,9 @@ blockquote::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .container {
