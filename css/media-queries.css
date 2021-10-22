@@ -110,6 +110,16 @@
     background-color: rgba(0, 0, 0, 0.3);
     
   }
+  /* header */
+  .header::before{
+   
+    background: url('../Img/background/query.JPG') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+  }
   
 
   /* contact */
