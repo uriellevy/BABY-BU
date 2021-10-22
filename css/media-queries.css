@@ -111,15 +111,7 @@
     
   }
   
-.header {
-  background: linear-gradient(
-      to right,
-      rgba(183, 131, 231, 0.2),
-      rgba(128, 104, 184, 0.2)
-    ),
-    url(/Img/background/query.JPG) no-repeat center center/cover fixed;
-  
-}
+
   /* contact */
 .contact-info{
   /* font-size: 4rem !important; */
