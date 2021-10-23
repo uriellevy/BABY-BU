@@ -111,15 +111,16 @@
     
   }
   /* header */
-  .header::before{
-   
-    background: url('../Img/background/query.JPG') center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  
-  }
+  .header { 
+    background-image:url("../Img/background/query.JPG"); 
+    background-position:center; 
+    background-attachment:scroll; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
+    }
   
   
 
@@ -134,9 +135,9 @@
 
 @media (max-width: 400px) {
   /* intro */
-  .intro-container {
+  /* .intro-container {
     height: 130vh;
-  }
+  } */
   /* video */
   #video video {
     max-width: 35rem;

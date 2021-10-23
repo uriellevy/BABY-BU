@@ -84,23 +84,14 @@ p {
   z-index: -1;
   display: flex;
   transition: 0.3s ease;
-}
-
-.header::before{
-  content:"";
-  position:fixed; /* stretch a fixed position to the whole screen */
-  top:0;
-  height:100vh; /* fix for mobile browser address bar appearing disappearing */
-  left:0;
-  right:0;
-  z-index:-1; /* needed to keep in the background */
   background: url('../Img/background/DSC04791.JPG')fixed center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
+
+
 
 .text-wrapper {
   background-color: rgba(0, 0, 0, 0.6);
@@ -189,16 +180,18 @@ nav #icon {
 
 #intro {
   background-color: #f4f4f4;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   
 }
 
-.intro-container {
-  height: 100%;
-  /* max-width: 100%; */
-  overflow: hidden;
-  /* padding-top: 0.2rem; */
-}
+
+
+
 .intro-content {
   background-color: var(--secondary-color);
   height: 100%;
@@ -230,6 +223,7 @@ nav #icon {
 
 #video {
   background-color: #f4f4f4;
+  position: relative;
 }
 
 .video-container{
@@ -242,7 +236,6 @@ nav #icon {
   
 
 }
-
 
 
 
@@ -419,9 +412,6 @@ blockquote::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 .container {
