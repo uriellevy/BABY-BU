@@ -110,6 +110,8 @@
     background-color: rgba(0, 0, 0, 0.3);
     
   }
+
+  /* IOS ADJUSTMENTS */
   /* header */
   .header { 
     background-image:url("../Img/background/query.JPG"); 
@@ -120,6 +122,31 @@
     -webkit-background-size:cover; 
     background-size:cover; 
     background-repeat:no-repeat;
+    }
+
+    /* video */
+    .video-container{
+      background: url("/Img/background/background-4.jpg") ;
+      background-position:center; 
+    background-attachment:scroll; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
+    }
+    /* gallery */
+    #gallery {
+      /* margin: 2rem 0; */
+      padding: 0;
+      background: url("/Img/background/background-4.jpg") ;
+      background-position:center; 
+      background-attachment:scroll; 
+      -o-background-size:cover; 
+      -moz-background-size:cover; 
+      -webkit-background-size:cover; 
+      background-size:cover; 
+      background-repeat:no-repeat;
     }
   
   
