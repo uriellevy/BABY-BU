@@ -125,6 +125,18 @@
   
 
   /* contact */
+
+  #contact {
+    background: url("/Img/background/background-3.jpg") ;
+      background-position:center; 
+    background-attachment:scroll; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
+   
+  }
 .contact-info{
   /* font-size: 4rem !important; */
   padding-left: 2rem;
