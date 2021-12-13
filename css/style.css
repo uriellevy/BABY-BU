@@ -544,6 +544,39 @@ blockquote::before {
 }
 
 /* ************** */
+/* THANK YOU PAGE */
+/* ************** */
+
+.thanks-container {
+  width: 100%;
+  height: 100vh;
+  background-color:rgba(101, 65, 148, 0.808);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f4f4f4;
+}
+
+.thanks-container .btn {
+  color: #333;
+  margin: 30px;
+  font-size: 1.4rem;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 6px 12px;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  border: none;
+}
+
+.thanks-container .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* ************** */
 /* FOOTER */
 /* ************** */
 
